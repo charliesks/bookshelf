@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Book Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore and download free books by [Your Name]">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header>
+    <h1>📚 My Digital Bookshelf</h1>
+  </header>
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <img src="books/Zabbix7-cover.png" alt="Zabbix 7 Cover">
+        <div class="card-content">
+          <div class="card-title">Zabbix 7 Cookbook (2024)</div>
+          <div class="card-buttons">
+            <a href="web/viewer.html?file=../books/Zabbix7.pdf" target="_blank">📖 View</a>
+            <a href="books/Zabbix7.pdf" download>⬇️ Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="books/book2-cover.jpg" alt="Book 2 Cover">
+        <div class="card-content">
+          <div class="card-title">Book Title Two</div>
+          <div class="card-buttons">
+            <a href="web/viewer.html?file=books/Book2.pdf" target="_blank">📖 View</a>
+            <a href="books/Book2.pdf" download>⬇️ Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section style="margin-top: 60px;">
+      <h2 style="text-align:center;">📬 Contact Me</h2>
+      <form action="https://formspree.io/f/xzzrwzzy" method="POST">
+        <label>Your Email:</label>
+        <input type="email" name="email" required>
+        <label>Your Message:</label>
+        <textarea name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="success-message" id="successMsg" style="display:none;">
+        ✅ Thank you! Your message was sent.
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+  <script>
+    if (window.location.search.includes("success=true")) {
+      document.getElementById("successMsg").style.display = "block";
+    }
+  </script>
+</body>
+</html>
