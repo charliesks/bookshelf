@@ -10,50 +10,58 @@ header {
   padding: 20px;
   text-align: center;
   color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 .card {
   background-color: white;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   overflow: hidden;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 240px;
+  object-fit: cover;
   display: block;
 }
 .card-content {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
+  flex: 1;
 }
 .card-title {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 10px;
+  word-break: break-word;
 }
 .card-buttons a {
   display: inline-block;
-  margin: 5px;
-  padding: 8px 16px;
+  margin: 4px;
+  padding: 6px 12px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
   color: white;
   background-color: #ff6a3d;
+  font-size: 0.85em;
 }
 .card-buttons a:hover {
   background-color: #e2582e;
